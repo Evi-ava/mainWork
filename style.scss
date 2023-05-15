@@ -1,6 +1,52 @@
 
-$lt  :  564px; // little
-$med : 756px; // medium
-$bg  :  980px;
-$xb  :  1188px;
-$xxb : 1388px;
+$lt  : 564px;        // little
+$med : 756px;        // medium
+$bg  : 980px;        // big
+$xb  : 1188px;       // extra big
+$xxb : 1388px;       // extra extra big
+
+$bs-padding-x: 1.5rem; // базовый внутренний отступ слева и справа
+$bs-padding-y: 0;      // базовый отступ сверху и снизу
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: $xxb;
+    width: 100%;
+    background-color: violet;
+    padding: $bs-padding-y $bs-padding-x * 0.5;
+    border-radius: 5px;
+
+    // устройства "Little", смартфоны с горизонтальной ориентацией
+    @media (min-width: $lt) {
+        max-width: 528px;
+        padding: $bs-padding-y $bs-padding-x * 0.5;
+    }
+
+    @media (min-width: $med) {
+        max-width: 708px;
+        padding: $bs-padding-y $bs-padding-x * 0.5;
+    }
+
+    @media (min-width: $bg) {
+        max-width: 948px;
+        padding: $bs-padding-y $bs-padding-x * 0.5;
+    }
+
+    @media (min-width: $xb) {
+        max-width: 1128px;
+        padding: $bs-padding-y $bs-padding-x * 0.5;
+    }
+
+    @media (min-width: $xxb) { 
+        max-width: 1308px;
+        padding: $bs-padding-y $bs-padding-x * 0.5;
+    }
+}
+
+
