@@ -6,12 +6,17 @@ $xb  : 1188px;       // extra big
 $xxb : 1388px;       // extra extra big
 
 $bs-padding-x: 1.5rem; // базовый внутренний отступ слева и справа
+$bs-margin-x: 1.5rem;  // базовый внешний отсуп слева и справа
 $bs-padding-y: 0;      // базовый отступ сверху и снизу
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html {
+    font-size: 16px;
 }
 
 .container {
@@ -48,5 +53,82 @@ $bs-padding-y: 0;      // базовый отступ сверху и снизу
         padding: $bs-padding-y $bs-padding-x * 0.5;
     }
 }
+
+.line {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 $bs-margin-x * -0.5;
+
+    & > * {
+        padding: $bs-padding-y $bs-padding-x * 0.5;
+    }
+}
+
+.f {
+    flex: 1 0 0%;
+
+    &-1 {
+        flex: 0 0 auto;
+        width: 8.33333333333%;
+    }
+
+    &-2  {
+        flex: 0 0 auto;
+        width: 16.6666666667%;
+    }
+
+    &-3  {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+
+    &-4  {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+
+    &-5  {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+
+    &-6  {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    &-7 { 
+        flex: 0 0 auto;
+        width: 58.33333333%;
+    }
+
+    &-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+    }
+
+    &-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+
+    &-10 {
+        flex: 0 0 auto;
+        width: 83.33333333%;
+    }
+
+    &-11 {
+        flex: 0 0 auto;
+        width: 91.66666667%;
+    }
+
+    &-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+
+
 
 
