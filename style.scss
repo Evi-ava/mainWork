@@ -5,6 +5,14 @@ $bg  : 980px;        // big
 $xb  : 1188px;       // extra big
 $xxb : 1388px;       // extra extra big
 
+$breakpoints : (
+    lt  : 564px,        // little
+    med : 756px,        // medium
+    bg  : 980px,        // big
+    xb  : 1188px,       // extra big
+    xxb : 1388px,       // extra extra big
+);
+
 $bs-padding-x: 1.5rem; // базовый внутренний отступ слева и справа
 $bs-margin-x: 1.5rem;  // базовый внешний отсуп слева и справа
 $bs-padding-y: 0;      // базовый отступ сверху и снизу
@@ -23,9 +31,7 @@ html {
     margin: 0 auto;
     max-width: $xxb;
     width: 100%;
-    background-color: violet;
     padding: $bs-padding-y $bs-padding-x * 0.5;
-    border-radius: 5px;
 
     // устройства "Little", смартфоны с горизонтальной ориентацией
     @media (min-width: $lt) {
@@ -70,6 +76,41 @@ html {
     &-1 {
         flex: 0 0 auto;
         width: 8.33333333333%;
+    }
+
+    @media (min-width: $lt) {
+        &-lt-1 {
+            flex: 0 0 auto;
+            width: 8.33333333333%;
+        }
+    }
+
+    @media (min-width: $med) {
+        &-med-1 {
+            flex: 0 0 auto;
+            width: 8.33333333333%;
+        }
+    }
+
+    @media (min-width: $bg) {
+        &-bg-1 {
+            flex: 0 0 auto;
+            width: 8.33333333333%;
+        }
+    }
+
+    @media (min-width: $xb) {
+        &-xb-1 {
+            flex: 0 0 auto;
+            width: 8.33333333333%;
+        }
+    }
+
+    @media (min-width: $xxb) { 
+        &-xxb-1 {
+            flex: 0 0 auto;
+            width: 8.33333333333%;
+        }
     }
 
     &-2  {
@@ -126,9 +167,92 @@ html {
         flex: 0 0 auto;
         width: 100%;
     }
+
+    // @media (min-width: $lt) {
+        
+    // }
+
+    // @media (min-width: $med) {
+      
+    // }
+
+    // @media (min-width: $bg) {
+
+    // }
+
+    // @media (min-width: $xb) {
+
+    // }
+
+    // @media (min-width: $xxb) { 
+
+    // }
+}
+
+.ali {
+    &-start {
+        align-items: flex-start;
+    }
+    &-center {
+        align-items: center;
+    }
+    &-end {
+        align-items: flex-end;
+    }
+}
+
+.alis {
+    &-start {
+        align-self: flex-start;
+    }
+    &-center {
+        align-self: center;
+    }
+    &-end {
+        align-self: flex-end;
+    }
+}
+
+.jus-cont {
+    &-start {
+        justify-content: start;
+    }
+
+    &-center {
+        justify-content: center;
+    }
+
+    &-end {
+        justify-content: end;
+    }
+
+    &-between {
+        justify-content: space-between;
+    }
+
+    &-around {
+        justify-content: space-around;
+    }
+
+    &-every {
+        justify-content: space-evenly;
+    }
+}
+
+.m-auto {
+    margin-left: auto;
+}
+
+.testline {
+    height: 200px;
 }
 
 
+.item {
+    height: 50px;
+    background-color: wheat;
+    font-size: 24px;
+}
 
 
 
