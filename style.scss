@@ -6,11 +6,11 @@ $xb  : 1188px;       // extra big
 $xxb : 1388px;       // extra extra big
 
 $breakpoints : (
-    lt  : 564px,        // little
-    med : 756px,        // medium
-    bg  : 980px,        // big
-    xb  : 1188px,       // extra big
-    xxb : 1388px,       // extra extra big
+    lt  : (564px, 528px),         // little
+    med : (756px, 708px),         // medium
+    bg  : (980px, 948px),         // big
+    xb  : (1188px, 1128px),       // extra big
+    xxb : (1388px, 1308px),       // extra extra big
 );
 
 $bs-padding-x: 1.5rem; // базовый внутренний отступ слева и справа
@@ -27,38 +27,8 @@ html {
     font-size: 16px;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: $xxb;
-    width: 100%;
-    padding: $bs-padding-y $bs-padding-x * 0.5;
-
-    // устройства "Little", смартфоны с горизонтальной ориентацией
-    @media (min-width: $lt) {
-        max-width: 528px;
-        padding: $bs-padding-y $bs-padding-x * 0.5;
-    }
-
-    @media (min-width: $med) {
-        max-width: 708px;
-        padding: $bs-padding-y $bs-padding-x * 0.5;
-    }
-
-    @media (min-width: $bg) {
-        max-width: 948px;
-        padding: $bs-padding-y $bs-padding-x * 0.5;
-    }
-
-    @media (min-width: $xb) {
-        max-width: 1128px;
-        padding: $bs-padding-y $bs-padding-x * 0.5;
-    }
-
-    @media (min-width: $xxb) { 
-        max-width: 1308px;
-        padding: $bs-padding-y $bs-padding-x * 0.5;
-    }
-}
+@import "./container.scss";
+ 
 
 .line {
     display: flex;

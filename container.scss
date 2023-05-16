@@ -1,0 +1,13 @@
+.container {
+    margin: 0 auto;
+    max-width: $xxb;
+    width: 100%;
+    padding: $bs-padding-y $bs-padding-x * 0.5;
+
+    @each $key, $list in $breakpoints {
+        @media (min-width: nth($list, 1)) {
+            max-width: nth($list, 2);
+            padding: $bs-padding-y $bs-padding-x * 0.5;
+        }
+    }
+}
