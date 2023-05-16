@@ -1,4 +1,14 @@
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
 $lt  : 564px;        // little
 $med : 756px;        // medium
 $bg  : 980px;        // big
@@ -17,18 +27,13 @@ $bs-padding-x: 1.5rem; // базовый внутренний отступ сл�
 $bs-margin-x: 1.5rem;  // базовый внешний отсуп слева и справа
 $bs-padding-y: 0;      // базовый отступ сверху и снизу
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
-html {
-    font-size: 16px;
-}
+
+
 
 @import "./container.scss";
- 
+@import "./fractions.scss";
+@import "./alignment.scss";
 
 .line {
     display: flex;
@@ -40,174 +45,7 @@ html {
     }
 }
 
-.f {
-    flex: 1 0 0%;
 
-    &-1 {
-        flex: 0 0 auto;
-        width: 8.33333333333%;
-    }
-
-    @media (min-width: $lt) {
-        &-lt-1 {
-            flex: 0 0 auto;
-            width: 8.33333333333%;
-        }
-    }
-
-    @media (min-width: $med) {
-        &-med-1 {
-            flex: 0 0 auto;
-            width: 8.33333333333%;
-        }
-    }
-
-    @media (min-width: $bg) {
-        &-bg-1 {
-            flex: 0 0 auto;
-            width: 8.33333333333%;
-        }
-    }
-
-    @media (min-width: $xb) {
-        &-xb-1 {
-            flex: 0 0 auto;
-            width: 8.33333333333%;
-        }
-    }
-
-    @media (min-width: $xxb) { 
-        &-xxb-1 {
-            flex: 0 0 auto;
-            width: 8.33333333333%;
-        }
-    }
-
-    &-2  {
-        flex: 0 0 auto;
-        width: 16.6666666667%;
-    }
-
-    &-3  {
-        flex: 0 0 auto;
-        width: 25%;
-    }
-
-    &-4  {
-        flex: 0 0 auto;
-        width: 33.33333333%;
-    }
-
-    &-5  {
-        flex: 0 0 auto;
-        width: 41.66666667%;
-    }
-
-    &-6  {
-        flex: 0 0 auto;
-        width: 50%;
-    }
-
-    &-7 { 
-        flex: 0 0 auto;
-        width: 58.33333333%;
-    }
-
-    &-8 {
-        flex: 0 0 auto;
-        width: 66.66666667%;
-    }
-
-    &-9 {
-        flex: 0 0 auto;
-        width: 75%;
-    }
-
-    &-10 {
-        flex: 0 0 auto;
-        width: 83.33333333%;
-    }
-
-    &-11 {
-        flex: 0 0 auto;
-        width: 91.66666667%;
-    }
-
-    &-12 {
-        flex: 0 0 auto;
-        width: 100%;
-    }
-
-    // @media (min-width: $lt) {
-        
-    // }
-
-    // @media (min-width: $med) {
-      
-    // }
-
-    // @media (min-width: $bg) {
-
-    // }
-
-    // @media (min-width: $xb) {
-
-    // }
-
-    // @media (min-width: $xxb) { 
-
-    // }
-}
-
-.ali {
-    &-start {
-        align-items: flex-start;
-    }
-    &-center {
-        align-items: center;
-    }
-    &-end {
-        align-items: flex-end;
-    }
-}
-
-.alis {
-    &-start {
-        align-self: flex-start;
-    }
-    &-center {
-        align-self: center;
-    }
-    &-end {
-        align-self: flex-end;
-    }
-}
-
-.jus-cont {
-    &-start {
-        justify-content: start;
-    }
-
-    &-center {
-        justify-content: center;
-    }
-
-    &-end {
-        justify-content: end;
-    }
-
-    &-between {
-        justify-content: space-between;
-    }
-
-    &-around {
-        justify-content: space-around;
-    }
-
-    &-every {
-        justify-content: space-evenly;
-    }
-}
 
 .m-auto {
     margin-left: auto;

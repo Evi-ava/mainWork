@@ -1,0 +1,49 @@
+.ali {
+    &-start {
+        align-items: flex-start;
+    }
+    &-center {
+        align-items: center;
+    }
+    &-end {
+        align-items: flex-end;
+    }
+}
+
+.alis {
+    &-start {
+        align-self: flex-start;
+    }
+    &-center {
+        align-self: center;
+    }
+    &-end {
+        align-self: flex-end;
+    }
+}
+
+.jus-cont {
+    &-start {
+        justify-content: start;
+    }
+
+    &-center {
+        justify-content: center;
+    }
+
+    &-end {
+        justify-content: end;
+    }
+
+    &-between {
+        justify-content: space-between;
+    }
+
+    &-around {
+        justify-content: space-around;
+    }
+
+    &-every {
+        justify-content: space-evenly;
+    }
+}

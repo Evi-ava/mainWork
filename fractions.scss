@@ -1,0 +1,21 @@
+.f {
+    flex: 1 0 0%;
+
+    @for $i from 1 through 12 {
+        &-#{$i} {
+            flex: 0 0 auto;
+            width: $i / 12 * 100%;
+        }
+    }
+
+    @each $key, $list in $breakpoints {
+        @media (min-width: nth($list, 1) ) {
+            @for $i from 1 through 12 {
+                &-#{$key}-#{$i} {
+                    flex: 0 0 auto;
+                    width: $i / 12 * 100%;
+                }
+            }
+        }
+    }
+}
