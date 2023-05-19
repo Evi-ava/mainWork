@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+$lt  : 564px;        // little
+$med : 756px;        // medium
+$bg  : 980px;        // big
+$xb  : 1188px;       // extra big
+$xxb : 1388px;       // extra extra big
+
+$breakpoints : (
+    lt  : (564px, 528px),         // little
+    med : (756px, 708px),         // medium
+    bg  : (980px, 948px),         // big
+    xb  : (1188px, 1128px),       // extra big
+    xxb : (1388px, 1308px),       // extra extra big
+);
+
+$bs-padding-x: 1.5rem; // базовый внутренний отступ слева и справа
+$bs-margin-x: 1.5rem;  // базовый внешний отсуп слева и справа
+$bs-padding-y: 0;      // базовый отступ сверху и снизу
