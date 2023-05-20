@@ -9,13 +9,15 @@ html {
     font-family: 'Montserrat'
 }  
 
-@import "./global";
+@import "./_global";
 @import "./container.scss";
 @import "./fractions.scss";
 @import "./alignment.scss";
 
 .bb {
     color: red;
+    background-color: blue;
+    font-size: 18px;
 }
 
 .d-flex {

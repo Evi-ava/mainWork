@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Montserrat";
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1388px;
+  width: 100%;
+  padding: 0 0.75rem;
+}
+@media (min-width: 564px) {
+  .container {
+    max-width: 528px;
+    padding: 0 0.75rem;
+  }
+}
+@media (min-width: 756px) {
+  .container {
+    max-width: 708px;
+    padding: 0 0.75rem;
+  }
+}
+@media (min-width: 980px) {
+  .container {
+    max-width: 948px;
+    padding: 0 0.75rem;
+  }
+}
+@media (min-width: 1188px) {
+  .container {
+    max-width: 1128px;
+    padding: 0 0.75rem;
+  }
+}
+@media (min-width: 1388px) {
+  .container {
+    max-width: 1308px;
+    padding: 0 0.75rem;
+  }
+}
+
+.f {
+  flex: 1 0 0%;
+}
+.f-1 {
+  flex: 0 0 auto;
+  width: 8.3333333333%;
+}
+.f-2 {
+  flex: 0 0 auto;
+  width: 16.6666666667%;
+}
+.f-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+.f-4 {
+  flex: 0 0 auto;
+  width: 33.3333333333%;
+}
+.f-5 {
+  flex: 0 0 auto;
+  width: 41.6666666667%;
+}
+.f-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.f-7 {
+  flex: 0 0 auto;
+  width: 58.3333333333%;
+}
+.f-8 {
+  flex: 0 0 auto;
+  width: 66.6666666667%;
+}
+.f-9 {
+  flex: 0 0 auto;
+  width: 75%;
+}
+.f-10 {
+  flex: 0 0 auto;
+  width: 83.3333333333%;
+}
+.f-11 {
+  flex: 0 0 auto;
+  width: 91.6666666667%;
+}
+.f-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+@media (min-width: 564px) {
+  .f-lt-1 {
+    flex: 0 0 auto;
+    width: 8.3333333333%;
+  }
+  .f-lt-2 {
+    flex: 0 0 auto;
+    width: 16.6666666667%;
+  }
+  .f-lt-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .f-lt-4 {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+  }
+  .f-lt-5 {
+    flex: 0 0 auto;
+    width: 41.6666666667%;
+  }
+  .f-lt-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .f-lt-7 {
+    flex: 0 0 auto;
+    width: 58.3333333333%;
+  }
+  .f-lt-8 {
+    flex: 0 0 auto;
+    width: 66.6666666667%;
+  }
+  .f-lt-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+  .f-lt-10 {
+    flex: 0 0 auto;
+    width: 83.3333333333%;
+  }
+  .f-lt-11 {
+    flex: 0 0 auto;
+    width: 91.6666666667%;
+  }
+  .f-lt-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+@media (min-width: 756px) {
+  .f-med-1 {
+    flex: 0 0 auto;
+    width: 8.3333333333%;
+  }
+  .f-med-2 {
+    flex: 0 0 auto;
+    width: 16.6666666667%;
+  }
+  .f-med-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .f-med-4 {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+  }
+  .f-med-5 {
+    flex: 0 0 auto;
+    width: 41.6666666667%;
+  }
+  .f-med-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .f-med-7 {
+    flex: 0 0 auto;
+    width: 58.3333333333%;
+  }
+  .f-med-8 {
+    flex: 0 0 auto;
+    width: 66.6666666667%;
+  }
+  .f-med-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+  .f-med-10 {
+    flex: 0 0 auto;
+    width: 83.3333333333%;
+  }
+  .f-med-11 {
+    flex: 0 0 auto;
+    width: 91.6666666667%;
+  }
+  .f-med-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+@media (min-width: 980px) {
+  .f-bg-1 {
+    flex: 0 0 auto;
+    width: 8.3333333333%;
+  }
+  .f-bg-2 {
+    flex: 0 0 auto;
+    width: 16.6666666667%;
+  }
+  .f-bg-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .f-bg-4 {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+  }
+  .f-bg-5 {
+    flex: 0 0 auto;
+    width: 41.6666666667%;
+  }
+  .f-bg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .f-bg-7 {
+    flex: 0 0 auto;
+    width: 58.3333333333%;
+  }
+  .f-bg-8 {
+    flex: 0 0 auto;
+    width: 66.6666666667%;
+  }
+  .f-bg-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+  .f-bg-10 {
+    flex: 0 0 auto;
+    width: 83.3333333333%;
+  }
+  .f-bg-11 {
+    flex: 0 0 auto;
+    width: 91.6666666667%;
+  }
+  .f-bg-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+@media (min-width: 1188px) {
+  .f-xb-1 {
+    flex: 0 0 auto;
+    width: 8.3333333333%;
+  }
+  .f-xb-2 {
+    flex: 0 0 auto;
+    width: 16.6666666667%;
+  }
+  .f-xb-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .f-xb-4 {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+  }
+  .f-xb-5 {
+    flex: 0 0 auto;
+    width: 41.6666666667%;
+  }
+  .f-xb-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .f-xb-7 {
+    flex: 0 0 auto;
+    width: 58.3333333333%;
+  }
+  .f-xb-8 {
+    flex: 0 0 auto;
+    width: 66.6666666667%;
+  }
+  .f-xb-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+  .f-xb-10 {
+    flex: 0 0 auto;
+    width: 83.3333333333%;
+  }
+  .f-xb-11 {
+    flex: 0 0 auto;
+    width: 91.6666666667%;
+  }
+  .f-xb-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+@media (min-width: 1388px) {
+  .f-xxb-1 {
+    flex: 0 0 auto;
+    width: 8.3333333333%;
+  }
+  .f-xxb-2 {
+    flex: 0 0 auto;
+    width: 16.6666666667%;
+  }
+  .f-xxb-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .f-xxb-4 {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+  }
+  .f-xxb-5 {
+    flex: 0 0 auto;
+    width: 41.6666666667%;
+  }
+  .f-xxb-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .f-xxb-7 {
+    flex: 0 0 auto;
+    width: 58.3333333333%;
+  }
+  .f-xxb-8 {
+    flex: 0 0 auto;
+    width: 66.6666666667%;
+  }
+  .f-xxb-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+  .f-xxb-10 {
+    flex: 0 0 auto;
+    width: 83.3333333333%;
+  }
+  .f-xxb-11 {
+    flex: 0 0 auto;
+    width: 91.6666666667%;
+  }
+  .f-xxb-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+.ali-start {
+  align-items: flex-start;
+}
+.ali-center {
+  align-items: center;
+}
+.ali-end {
+  align-items: flex-end;
+}
+
+.alis-start {
+  align-self: flex-start;
+}
+.alis-center {
+  align-self: center;
+}
+.alis-end {
+  align-self: flex-end;
+}
+
+.jus-cont-start {
+  justify-content: start;
+}
+.jus-cont-center {
+  justify-content: center;
+}
+.jus-cont-end {
+  justify-content: end;
+}
+.jus-cont-between {
+  justify-content: space-between;
+}
+.jus-cont-around {
+  justify-content: space-around;
+}
+.jus-cont-every {
+  justify-content: space-evenly;
+}
+
+.bb {
+  color: red;
+  background-color: blue;
+  font-size: 18px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.f-dir-column {
+  flex-direction: column;
+}
+
+.f-dir-row {
+  flex-direction: row;
+}
+
+.line {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.75rem;
+}
+.line > * {
+  padding: 0 0.75rem;
+}
+
+.m-auto {
+  margin-left: auto;
+}
+
+.testline {
+  height: 200px;
+}
+
+.item {
+  height: 50px;
+  background-color: wheat;
+  font-size: 24px;
+  border: 2px solid whitesmoke;
+}
+/*# sourceMappingURL=../sourcemaps/fresh.min.css.map */
