@@ -18,3 +18,11 @@ $breakpoints : (
 $bs-padding-x: 1.5rem; // базовый внутренний отступ слева и справа
 $bs-margin-x: 1.5rem;  // базовый внешний отсуп слева и справа
 $bs-padding-y: 0;      // базовый отступ сверху и снизу
+
+$black  : #000000;
+$violet : #34385B;
+$white  : #FFFFFF; 
+
+.base {
+    color: whitesmoke;
+}

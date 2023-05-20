@@ -6,9 +6,10 @@
 
 html {
     font-size: 16px;
+    font-family: 'Montserrat'
 }  
 
-@import "./global.scss";
+@import "./global";
 @import "./container.scss";
 @import "./fractions.scss";
 @import "./alignment.scss";
