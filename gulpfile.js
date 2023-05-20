@@ -3,7 +3,7 @@ const gulp = require('gulp');
 const sass   = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const map    = require('gulp-sourcemaps');
-const chalk  = require('chalk');
+// const chalk  = require('chalk');
 
 const freshFramework = "/fresh/fresh-framework/*.scss";
 const freshCSS = "/fresh/fresh-css/";
