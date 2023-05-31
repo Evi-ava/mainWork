@@ -389,14 +389,16 @@ html {
   justify-content: space-evenly;
 }
 
-.bb {
-  color: red;
-  background-color: blue;
-  font-size: 18px;
-}
-
 .d-flex {
   display: flex;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.w100 {
+  width: 100%;
 }
 
 .f-dir-column {

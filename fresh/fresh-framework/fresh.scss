@@ -3,25 +3,30 @@
     margin: 0;
     padding: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 html {
     font-size: 16px;
     font-family: 'Montserrat'
 }  
 
-@import "./_global";
+@import "./../global";
 @import "./container.scss";
 @import "./fractions.scss";
 @import "./alignment.scss";
 
-.bb {
-    color: red;
-    background-color: blue;
-    font-size: 18px;
-}
 
 .d-flex {
     display: flex;
+}
+
+.h100 {
+    height: 100%;
+}
+
+.w100 {
+    width: 100%;
 }
 
 .f-dir-column {

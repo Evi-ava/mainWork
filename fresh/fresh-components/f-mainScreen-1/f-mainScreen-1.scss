@@ -1,6 +1,5 @@
 @import "../../global";
-$violet: #34385B;
-$white: #FFFFFF;
+
 
 .f-mainScreen-1 {
     color: $white;
@@ -18,6 +17,11 @@ $white: #FFFFFF;
 
     &__title-group {
         margin-top: -50px;
+    }
+
+    .vvv {
+        height: 1px;
+        width: 1px;
     }
 
     .line {

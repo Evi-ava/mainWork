@@ -3,6 +3,12 @@
 
 .f-column-1 {
 
+    height: 100vh;
+
+    &__container {
+        height: 100%;
+    }
+
     .cards {
       gap: 24px;  
 
